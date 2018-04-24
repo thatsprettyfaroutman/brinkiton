@@ -1,0 +1,12 @@
+{
+  "modules": false,
+  "plugins": {
+    "postcss-inject": {
+      "injectTo": "fileStart",
+      "cssFilePath": "./shared/styles/variables.css"
+    },
+    "postcss-cssnext": {},
+    "postcss-browser-reporter": {},
+    "postcss-reporter": {}
+  }
+}
