@@ -5,11 +5,11 @@ import './index.css'
 import React, { Fragment } from 'react'
 import ReactDom from 'react-dom'
 
-import Game from 'Shared/Game'
+import App from './App'
 
 
 ReactDom.render((
   <div className="App">
-    <Game />
+    <App />
   </div>
 ), document.getElementById('root'))

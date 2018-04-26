@@ -32,6 +32,9 @@
     "echoascii": "^1.0.3",
     "express": "^4.16.3",
     "inline-style-prefix-all": "^2.0.2",
+    "lodash.noop": "^3.0.1",
+    "lodash.random": "^3.2.0",
+    "lodash.set": "^4.3.2",
     "lottie-web": "^5.1.10",
     "matter-js": "^0.14.1",
     "nodemon": "^1.17.2",
@@ -46,6 +49,8 @@
     "raf": "^3.4.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "stats.js": "^0.17.0",
+    "three": "^0.92.0",
     "validate.js": "^0.12.0"
   }
 }
