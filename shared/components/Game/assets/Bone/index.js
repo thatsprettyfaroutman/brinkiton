@@ -10,12 +10,15 @@ import Entity from '../Entity'
 
 
 class Bone extends Entity {
+  _matterWidth = 10
+  _matterHeight = 30
+  _lifeTime = 3000
 
   constructor(fromV, toV) {
     super()
 
     const angle = Vector.angle(fromV, toV)
-    const matter = Bodies.rectangle(fromV.x, fromV.y, 10, 30)
+    const matter = Bodies.rectangle(fromV.x, fromV.y, this._matterWidth, this._matterHeight)
 
     const angularVelocity = toV.x > window.innerWidth / 2 ?
       Math.random() / 2 :
@@ -28,6 +31,8 @@ class Bone extends Entity {
       y: Math.sin(angle) * 10 + Math.random() * 2 - 1,
     })
     this._matter = matter
+
+    this.drawMatter()
   }
 
 }
